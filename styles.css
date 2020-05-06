@@ -6,27 +6,73 @@
 body {
     height: 100vh;
     display: flex;
-    background: skyblue;
+    background: #1ac9ff;
 }
 .container {
+    background-image: url("img/beach-1080x1080.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 640px;
     height: 640px;
     margin: auto;
     display: flex;
     flex-wrap: wrap; 
+    justify-content: center;
 }
 .card {
-    background: goldenrod;
-    width: calc(15% - 10px);
+    background: rgb(255, 209, 112);
+    width: calc(17% - 10px);
+    min-width: 100px;
     height: calc(25% - 10px);
-    margin: 3px;
     position: relative;
+    margin: auto;
+    border: 5px solid rgb(255, 209, 112);
+    display: flex;
 }
 .card:hover {
-    cursor: src('noun_Shovel_2373641.png'), pointer ;
-    border: 3px solid burlywood
+    cursor: url("img/shovel-red-sm.png") auto;
+    border: 3px solid rgb(240, 168, 71);
 }
 .card p {
     font-size: 36px;
     color: purple;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+aside img {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.play {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+button {
+    background-color:lightgreen;
+}
+
+.unmatched {
+    background-image: url("img/towel3.png");
+}
+.selected {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-style: 'Luckiest Guy', cursive;
+    color: white;
 }

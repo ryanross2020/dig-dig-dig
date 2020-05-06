@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dig-dig-dig</title>
+    <title>Dig - A 2 Player Match Game</title>
     <script
     src="https://code.jquery.com/jquery-3.5.0.js"
     integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
@@ -40,5 +41,22 @@
         <div class="card unmatched"></div>
         <div class="card unmatched"></div>
     </div>
+    <aside> 
+        <img src="img/Dig-1.png" alt="Dig">
+        <br>
+        <div class="play">
+            <button><a href="#">Instructions</a></button>
+            <br>
+            <b>Player 1 </b>
+            <b class="matchesButton">Matches:</b><button id="player1"></button>
+            <br>
+            <b>Player 2 </b>
+            <b class="matchesButton">Matches:</b><button id="player2"></button>
+            <br>
+            <button><a href="Play Again" onclick="window.location.reload();return false;">Play Again</a></button>
+            <br>
+            <button><a href="javascript:history.back();">Close Game</a></button>
+        </div>
+    </aside>
 </body>
 </html>
