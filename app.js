@@ -31,7 +31,7 @@ $(document).ready(function(){
             //concatenate +app.cards
             console.log('Shuffled Card Array: '+app.cards);
         },
-        //using data-'dash' attr 
+        // using data - 'dash' attr 
         assignCards: function() {
             //puts in index number to assign
             $('.card').each(function(index) {
