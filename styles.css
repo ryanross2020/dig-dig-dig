@@ -1,36 +1,3 @@
-/* @keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem); }
-    80% {
-        transform: translateX(1rem); }
-    100% {
-        opacity: 1;
-        transform: translate(0); } }
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem); }
-    80% {
-        transform: translateX(-1rem); }
-    100% {
-        opacity: 1;
-        transform: translate(0); } }
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(3rem); }
-    70% {
-        opacity: 0.5;
-        transform: translateY(-.1rem); }    
-    100% {
-        opacity: 1;
-        transform: translate(0); } } */
-
-
-
 
 *,
 *::after,
@@ -197,6 +164,10 @@ h1 {
     position: relative;
     margin-top: 3.5rem; 
 }
+.instructions_icon::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
 .button, .button:link, .button:visited {
     background-color:lightgreen;
     z-index: 2000;
@@ -215,6 +186,10 @@ h1 {
     transform: translateY(-.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
+.button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+    }
 .unmatched {
     background-image: url("img/towel3.png");
 }
