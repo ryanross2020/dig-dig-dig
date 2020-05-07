@@ -108,7 +108,7 @@ $(document).ready(function(){
                     $('.container').html('<h1>Player 2 Won!</h1>');
                 //else if neither happens they have tied and need to play again!
                 } else {
-                    $('.container').html(`<h1>You've tied! Please Play Again!</h1>`);
+                    $('.container').html(`<h1>You've tied!<br>Please Play Again!</h1>`);
                 }
                  
             }
