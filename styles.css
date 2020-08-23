@@ -68,6 +68,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-right: 200px;
 }
 .dig_play img {
   height: 250px;
