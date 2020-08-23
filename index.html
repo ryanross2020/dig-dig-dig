@@ -1,88 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dig - A 2 Player Match Game</title>
     <script
-    src="https://code.jquery.com/jquery-3.5.0.js"
-    integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
-    crossorigin="anonymous"
-    defer
-></script>
-<link rel="stylesheet" href="styles.css" />
-<link rel="shortcut icon" type="image/png" href="img/shovel-red-sm.png">
-<script src="app.js" defer></script>
-</head>
-<body>
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/png" href="img/shovel-red-sm.png" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
-        <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
+      <div class="card unmatched"></div>
     </div>
-    <aside class="dig_play"> 
-        <img src="img/Dig-1.png" alt="Dig">
-        <br>
-        <div class="play">
-            <input type="checkbox" class="instructions_checkbox" id="instructions-toggle">
-           
-           <label for="instructions-toggle" class="instructions_button">
-               <span class="instructions_icon">INSTRUCTIONS</span></label>
-               <div class="instructions_background">&nbsp;
-            </div>
-            <div class="instructions">
-                <ul class="intructions_list">
-                    <li class="instruction_item instruction_header">Dig is a memory card game.</li>
-                    <br>
-                    <li class="instruction_item">THE BASIC RULES</li>
-                    <li class="instruction_item"><span>1.</span>Turn over any two cards.</li>
-                    <li class="instruction_item"><span>2.</span>If the two cards match, you get a point</li>
-                    <li class="instruction_item"><span>3.</span>If they don't match, the cards flip over and it's the next players turn.</li>
-                    <li class="instruction_item"><span>4.</span>Remember what was on each card and where it was.</li>
-                    <li class="instruction_item"><span>5.</span>Watch and remember during the other player's turn.</li>
-                    <li class="instruction_item"><span>6.</span>The game is over when all the cards have been matched.</li>
-                    <li class="instruction_item"><span>7.</span>The player with the most points wins.</li>
-                    <li class="instruction_item"><span>8.</span>If there is a tie the players can play again.</li>
-                    <br>
-                    <li class="instruction_item">Player 1 takes first turn and has the color blue background.</li>
-                    <li class="instruction_item">Player 2 takes the next turn and has the color yellow background.</li>
-                    <br>
-                    <li class="instruction_item">The play again button will reset the board for you at any time during play.</li>
-                </ul>
-            </div>
-            <br>
-            <b class="playerMatches">Player 1 </b>
-            <b class="playerMatches">Matches:</b><button class="button" id="player1"></button>
-            <br>
-            <b class="playerMatches">Player 2 </b>
-            <b class="playerMatches">Matches:</b><button class="button" id="player2"></button>
-            <br>
-            <button class="button"><a href="Play Again" onclick="window.location.reload();return false;">Play Again</a></button>
-            <br>
-            <button class="button"><a href="javascript:history.back();">Close Game</a></button>
+    <aside class="dig_play">
+      <img src="img/Dig-1.png" alt="Dig" />
+      <br />
+      <div class="play">
+        <input
+          type="checkbox"
+          class="instructions_checkbox"
+          id="instructions-toggle"
+        />
+
+        <label for="instructions-toggle" class="instructions_button">
+          <span class="instructions_icon">INSTRUCTIONS</span></label
+        >
+        <div class="instructions_background">&nbsp;</div>
+        <div class="instructions">
+          <ul class="intructions_list">
+            <li class="instruction_item instruction_header">
+              Dig is a memory card game.
+            </li>
+            <br />
+            <li class="instruction_item">THE BASIC RULES</li>
+            <li class="instruction_item">
+              <span>1.</span>Turn over any two cards.
+            </li>
+            <li class="instruction_item">
+              <span>2.</span>If the two cards match, you get a point
+            </li>
+            <li class="instruction_item">
+              <span>3.</span>If they don't match, the cards flip over and it's
+              the next players turn.
+            </li>
+            <li class="instruction_item">
+              <span>4.</span>Remember what was on each card and where it was.
+            </li>
+            <li class="instruction_item">
+              <span>5.</span>Watch and remember during the other player's turn.
+            </li>
+            <li class="instruction_item">
+              <span>6.</span>The game is over when all the cards have been
+              matched.
+            </li>
+            <li class="instruction_item">
+              <span>7.</span>The player with the most points wins.
+            </li>
+            <li class="instruction_item">
+              <span>8.</span>If there is a tie the players can play again.
+            </li>
+            <br />
+            <li class="instruction_item">
+              Player 1 takes first turn and has the color blue background.
+            </li>
+            <li class="instruction_item">
+              Player 2 takes the next turn and has the color yellow background.
+            </li>
+            <br />
+            <li class="instruction_item">
+              The play again button will reset the board for you at any time
+              during play.
+            </li>
+          </ul>
         </div>
+        <br />
+        <b class="playerMatches">Player 1 </b>
+        <b class="playerMatches">Matches:</b><button id="player1"></button>
+        <br />
+        <b class="playerMatches">Player 2 </b>
+        <b class="playerMatches">Matches:</b><button id="player2"></button>
+        <br />
+        <button class="button">
+          <a href="Play Again" onclick="window.location.reload();return false;"
+            >Play Again</a
+          >
+        </button>
+        <br />
+        <button class="button">
+          <a href="javascript:history.back();">Close Game</a>
+        </button>
+      </div>
     </aside>
-</body>
+  </body>
 </html>
